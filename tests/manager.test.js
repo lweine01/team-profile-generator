@@ -1,0 +1,1 @@
+const Manager = require("../assets/js/manager");

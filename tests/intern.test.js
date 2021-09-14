@@ -1,0 +1,1 @@
+const Intern = require("../assets/js/intern");
