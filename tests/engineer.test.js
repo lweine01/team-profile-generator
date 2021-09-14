@@ -1,4 +1,4 @@
-const Engineer = require("../assets/js/engineer");
+const Engineer = require("../assets/lib/engineer");
 
 test("Can set GitHub username via constructor argument", () => {
     const testValue = "lweine01";

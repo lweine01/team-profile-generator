@@ -1,16 +1,15 @@
-const Employee = require("./employee");
-const Manager = require("./manager");
-const Intern = require("./intern");
-const Engineer = require("./engineer");
-const Inquirer = require("inquirer");
-const fs = require('fs');
+const Employee = require("./assets/lib/employee");
+const Manager = require("./assets/lib/manager");
+const Intern = require("./assets/lib/intern");
+const Engineer = require("./assets/lib/engineer");
 const inquirer = require("inquirer");
+const fs = require('fs');
 
 const teamMembers = [];
 
 managerPrompts();
 
-managerPrompts = () => {
+function managerPrompts() {
     inquirer.prompt([
         {
             type: 'input',
@@ -39,10 +38,10 @@ managerPrompts = () => {
     });
 }
 
-newMember = () => {
+function newMember() {
     inquirer.prompt([
         {
-            input: 'rawList',
+            type: 'list',
             name: 'position',
             message: 'What position would you like to add to team?',
             choices: ['Intern', 'Engineer', 'Hiring Completed']
@@ -54,11 +53,12 @@ newMember = () => {
             engineerPrompts();
         } else {
             generateMarkdown();
+            
         }
     });
 }
 
-engineerPrompts = () => {
+function engineerPrompts() {
     inquirer.prompt([
         {
             type: 'input',
@@ -72,7 +72,7 @@ engineerPrompts = () => {
         },
         {
             type: 'input',
-            name: 'engineeerEmail',
+            name: 'engineerEmail',
             message: 'What is the engineers email address?'
         },
         {
@@ -87,7 +87,7 @@ engineerPrompts = () => {
     });
 }
 
-internPromts = () => {
+function internPrompts (){
     inquirer.prompt([
         {
             type: 'input',
@@ -114,4 +114,8 @@ internPromts = () => {
         teamMembers.push(intern);
         newMember();
     });
+}
+
+function generateMarkdown(){
+    console.log(teamMembers);
 }

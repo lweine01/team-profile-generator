@@ -5,13 +5,21 @@ class Employee {
     this.email = email;
     this.role = 'Employee';
 }
-  getName =() => this.name;
+  getName(){
+    return this.name;
+  }
 
-  getId = () => this.id;
+  getId() {
+    return this.id;
+  }
 
-  getEmail = () => this.email;
+  getEmail() {
+    return this.email;
+  }
 
-  getRole = () => this.role;
+  getRole() {
+    return 'Employee';
+  }
 
 }
 

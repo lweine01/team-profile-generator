@@ -1,4 +1,4 @@
-const Intern = require("../assets/js/intern");
+const Intern = require("../assets/lib/intern");
 
 test("Can set school name via constructor argument", () => {
     const testValue = "UNCC";

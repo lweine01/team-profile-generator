@@ -1,5 +1,5 @@
 // Instructor: [Anthony Cooper] | Provided: 09/13/2021 
-const Employee = require("../assets/js/employee");
+const Employee = require("../assets/lib/employee");
 
 test("Can instantiate Employee instance", () => {
   const e = new Employee();
