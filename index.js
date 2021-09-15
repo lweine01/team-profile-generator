@@ -116,7 +116,6 @@ function internPrompts() {
 }
 
 function generateHtml() {
-    console.log(teamMembers);
     renderArr = [];
 
     const htmlStart = `<!DOCTYPE html>
@@ -152,8 +151,8 @@ function generateHtml() {
             </div>
             <div class="card-body bg-light">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Id: ${teamMembers[i].getId()}o</li>
-                    <li class="list-group-item"> Email: <a href:"mailto: ${teamMembers[i].getEmail()}">${teamMembers[i].getEmail()}</a></li>
+                    <li class="list-group-item">Id: ${teamMembers[i].getId()}</li>
+                    <li class="list-group-item"> Email: <a href="mailto:${teamMembers[i].getEmail()}">${teamMembers[i].getEmail()}</a></li>
                     <li class="list-group-item">Office number: ${teamMembers[i].getOffice()}</li>
                 </ul>
             </div>
@@ -167,7 +166,7 @@ function generateHtml() {
             </div>
             <div class="card-body bg-light">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Id: ${teamMembers[i].getId()}o</li>
+                    <li class="list-group-item">Id: ${teamMembers[i].getId()}</li>
                     <li class="list-group-item"> Email: <a href="mailto: ${teamMembers[i].getEmail()}">${teamMembers[i].getEmail()}</a></li>
                     <li class="list-group-item">School: ${teamMembers[i].getSchool()}</li>
                 </ul>
@@ -182,7 +181,7 @@ function generateHtml() {
             </div>
             <div class="card-body bg-light">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Id: ${teamMembers[i].getId()}o</li>
+                    <li class="list-group-item">Id: ${teamMembers[i].getId()}</li>
                     <li class="list-group-item"> Email: <a href="mailto: ${teamMembers[i].getEmail()}">${teamMembers[i].getEmail()}</a></li>
                     <li class="list-group-item">GitHub: <a href=https://github.com/${teamMembers[i].getGitHub()}>${teamMembers[i].getGitHub()}</a></li>
                 </ul>

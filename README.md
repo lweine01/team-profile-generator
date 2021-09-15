@@ -15,11 +15,11 @@ This is an application where the user inputs information to add employees into t
 To create a professional team profile generator using the command line prompts.
 
 ## Walkthrough
-[Link to Video]()
+[Link to Video](https://drive.google.com/file/d/1OiTj6O3vzeopxpGNMMi7mpPTPv7t-9vz/view)
 
 ## Screenshot
-![screenshot](assets/images/)
-![screenshot](assets/images/)
+![screenshot](assets/images/screenshot1.png)
+![screenshot](assets/images/screenshot2.png)
 
 -------
 
