@@ -53,7 +53,6 @@ function newMember() {
             engineerPrompts();
         } else {
             renderHtml();
-
         }
     });
 }
@@ -140,7 +139,6 @@ function generateHtml() {
         </header>
     
         <main class="container justify-content-center row col-12">`;
-
     renderArr.push(htmlStart);
 
     for (let i = 0; i < teamMembers.length; i++) {
@@ -193,15 +191,15 @@ function generateHtml() {
         }
         renderArr.push(htmlMember);
     }
-    
+
     const htmlEnd = `</main>
-    </body>
+        </body>
     </html>`;
     renderArr.push(htmlEnd);
 
     return renderArr.join('');
-
 }
+
 function renderHtml() {
     fs.writeFile('team.html', generateHtml(), 'utf-8', (err) => {
         err ? console.log(err) : console.log('File successfully created! Great Work.')
